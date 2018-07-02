@@ -1,6 +1,6 @@
 package HeadFirst.Movie;
 
-class MovieTestDrive {
+public class MovieTestDrive {
     public static void main(String[] args) {
         Movie one = new Movie();
         one.title = "Как Прогореть на акциях";
