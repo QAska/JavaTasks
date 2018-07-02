@@ -1,6 +1,6 @@
 package HeadFirst.Dog;
 
-public class Dog {
+class Dog {
     int size;
     String breed;
     String name;
