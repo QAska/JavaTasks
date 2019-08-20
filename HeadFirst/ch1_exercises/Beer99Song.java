@@ -1,9 +1,10 @@
-package net.tasks.HeadFirst;
+package HeadFirst.ch1_exercises;
 
 public class Beer99Song {
     public static void main (String[] args) {
         int beerNum = 99;
         String word = "бутылок (бутылки)";
+
         while (beerNum > 0) {
             System.out.println(beerNum + " " + word + " пива на стене.");
             System.out.println(beerNum + " " + word + " пива.");
