@@ -1,4 +1,4 @@
-package HeadFirst.DVDPlayer;
+package HeadFirst.ch2_DVDPlayer;
 
 class DVDPlayer {
     boolean canRecord = false;

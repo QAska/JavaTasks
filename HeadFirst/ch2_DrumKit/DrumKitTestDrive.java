@@ -1,4 +1,4 @@
-package HeadFirst.DrumKit;
+package HeadFirst.ch2_DrumKit;
 
 class DrumKitTestDrive {
     public static void main(String[] args) {

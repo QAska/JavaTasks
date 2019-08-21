@@ -1,4 +1,4 @@
-package HeadFirst.ch1_dog;
+package HeadFirst.ch2_exercises;
 
 class Dog {
     int size;

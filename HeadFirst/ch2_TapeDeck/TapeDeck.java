@@ -1,10 +1,10 @@
-package HeadFirst.TapeDeck;
+package HeadFirst.ch2_TapeDeck;
 
 class TapeDeck {
     boolean canRecord = false;
 
     void playTape() {
-        System.out.println("пленка зпроигрывается");
+        System.out.println("пленка проигрывается");
     }
 
     void recordTape() {

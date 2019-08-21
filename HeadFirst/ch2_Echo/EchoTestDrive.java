@@ -1,4 +1,4 @@
-package HeadFirst.Echo;
+package HeadFirst.ch2_Echo;
 
 public class EchoTestDrive {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package HeadFirst.ch1_dog;
+package HeadFirst.ch2_exercises;
 
 class DogTestDrive {
     public static void main (String[] args) {

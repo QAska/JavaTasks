@@ -1,4 +1,4 @@
-package HeadFirst.DVDPlayer;
+package HeadFirst.ch2_DVDPlayer;
 
 class DVDPlayerTestDrive {
     public static void main(String[] args) {

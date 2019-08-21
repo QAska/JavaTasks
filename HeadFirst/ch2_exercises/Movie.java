@@ -1,4 +1,4 @@
-package HeadFirst.Movie;
+package HeadFirst.ch2_exercises;
 
 class Movie {
     String title;

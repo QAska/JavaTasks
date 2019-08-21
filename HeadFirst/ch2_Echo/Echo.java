@@ -1,4 +1,4 @@
-package HeadFirst.Echo;
+package HeadFirst.ch2_Echo;
 
 class Echo {
     int count = 0;

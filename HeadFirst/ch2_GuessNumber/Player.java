@@ -1,4 +1,4 @@
-package HeadFirst.GuessNumber;
+package HeadFirst.ch2_GuessNumber;
 
 public class Player {
     int number = 0;
