@@ -5,7 +5,7 @@ public class DataOnlyPrint {
 
     public static void main(String[] args){
         DataOnlyPrint data = new DataOnlyPrint();
-        data.i = 48; // ???????????
+        data.i = 48; // эксперимент
         System.out.println(data.i);
         System.out.println(data.d);
         System.out.println(data.b);
