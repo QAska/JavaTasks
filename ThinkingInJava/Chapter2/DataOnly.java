@@ -1,7 +1,5 @@
 /****************** Exercise 4 ******************
- * Turn the DataOnly code fragments into a
- * program that compiles and runs.
- Everything is an Object 11
+ * Turn the DataOnly code fragments into a program that compiles and runs.
  ************************************************/
 
 public class DataOnly {

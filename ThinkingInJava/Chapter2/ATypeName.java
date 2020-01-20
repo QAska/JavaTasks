@@ -1,7 +1,6 @@
 /****************** Exercise 3 ******************
  * Turn the code fragments involving ATypeName
- * into a program that compiles and
- * runs.
+ * into a program that compiles and runs.
  ************************************************/
 
 public class ATypeName {
