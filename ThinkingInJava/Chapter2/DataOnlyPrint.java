@@ -9,7 +9,7 @@ public class DataOnlyPrint {
     double d = 1.1;
     boolean b = false;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         DataOnlyPrint data = new DataOnlyPrint();
         data.i = 48; // эксперимент
         System.out.println(data.i);
