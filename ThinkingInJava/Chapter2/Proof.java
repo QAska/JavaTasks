@@ -1,3 +1,10 @@
+/****************** Exercise 8 ******************
+ * Write a program to demonstrate that no
+ * matter how many objects you create of a
+ * particular class, there is only one instance
+ * of a particular static field in that class.
+ ************************************************/
+
 public class Proof {
     static int i = 47;
 
