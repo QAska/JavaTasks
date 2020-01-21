@@ -1,5 +1,6 @@
 /****************** Exercise 2 *****************
- * Create a class containing a float and use it to demonstrate aliasing.
+ * Create a class containing a float and use it
+ * to demonstrate aliasing.
  ***********************************************/
 
 class Name {
