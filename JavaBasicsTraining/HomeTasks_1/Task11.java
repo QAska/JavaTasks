@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class SqTreangle {
+public class Task11 {
     public static void main(String args[]) {
         Double a, b, c, p, s;
 

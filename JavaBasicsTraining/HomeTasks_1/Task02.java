@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Function1 {
+public class Task02 {
     public static void main(String[] args) {
         int a;
         int c;

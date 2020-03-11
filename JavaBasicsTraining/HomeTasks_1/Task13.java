@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class PAndS {
+public class Task13 {
     public static void main(String args[]) {
         Double x1, y1, x2, y2, x3, y3, a, b, c, p, p2, s;
 

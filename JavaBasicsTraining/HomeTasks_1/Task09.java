@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class Expression2 {
+public class Task09 {
     public static void main(String args[]) {
         double a, b, c, d, res;
 

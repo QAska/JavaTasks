@@ -2,7 +2,7 @@
 Напишите программу вычисления суммы четырёх слагаемых.
 */
 
-public class SumOfFour {
+public class Task05 {
     public static void main(String[] args) {
         double a;
         double b;

@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class RectangleSquare {
+public class Task07 {
     public static void main(String[] args) {
         int a;
         double b;

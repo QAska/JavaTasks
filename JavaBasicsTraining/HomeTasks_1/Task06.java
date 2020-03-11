@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class MilkTask {
+public class Task06 {
     public static void main(String[] args) {
         int n;
         int m;

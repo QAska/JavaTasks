@@ -2,7 +2,7 @@
 Напишите программу нахождения гипотенузы и площади прямоугольного треугольника по двум катетам.
 */
 
-public class TriangleHypotenuseAndArea {
+public class Task04 {
     public static void main(String[] args) {
         double a;
         double b;

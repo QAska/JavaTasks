@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Average {
+public class Task05 {
     public static void main(String[] args) {
         double a;
         double b;

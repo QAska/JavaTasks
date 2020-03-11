@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class SumDifMultQuit {
+public class Task01 {
     public static void main(String[] args) {
         double x;
         double y;

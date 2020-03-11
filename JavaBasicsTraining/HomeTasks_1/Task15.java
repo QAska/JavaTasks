@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Pi4 {
+public class Task15 {
     public static void main(String args[]) {
         int n;
 
