@@ -5,7 +5,7 @@
 import java.util.Scanner;
 
 public class Task11 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Double a, b, c, p, s;
 
         Scanner in = new Scanner(System.in);

@@ -6,7 +6,7 @@
 import java.util.Scanner;
 
 public class Task08 {
-    public static void main (String args[]) {
+    public static void main (String[] args) {
 
         double a, b, c, res;
 

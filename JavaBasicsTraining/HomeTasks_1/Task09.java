@@ -6,7 +6,7 @@
 import java.util.Scanner;
 
 public class Task09 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         double a, b, c, d, res;
 
         Scanner in = new Scanner(System.in);
