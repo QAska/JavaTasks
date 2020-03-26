@@ -30,21 +30,10 @@ public class Task32 {
         tempH = 0;
         tempM = 0;
 
-        if ((s + r) > 60) {
-            ss = (s + r) % 60;
-            tempM += ((s + r) / 60);
-        }
-        else {
-            ss = (s + r) % 60;
-        }
-
-        if ((m + q + tempM) > 60) {
-            mm = (m + q + tempM) % 60;
-            tempH += ((q + m) / 60);
-        }
-        else {
-            mm = (m + q + tempM) % 60;
-        }
+        ss = (s + r) % 60;
+        tempM += ((s + r) / 60);
+        mm = (m + q + tempM) % 60;
+        tempH += ((q + m) / 60);
 
         hh = (h + p + tempH) % 24;
         System.out.println("New time is: " + hh + "hh " + mm + "mm " + ss + "ss");
