@@ -14,7 +14,6 @@ public class Task10 {
         factorial = calcOddFactorial(n);
 
         System.out.println("Factorial of odd numbers from 1 to " + n + " is " + factorial + ".");
-
     }
 
     public static int calcOddFactorial(int n) {
