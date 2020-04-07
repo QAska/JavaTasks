@@ -15,7 +15,7 @@ public class Task08 {
 
         int[] array = new int[n];
         initArray(array);
-        printArra(array);
+        printArray(array);
 
         max = maxValue(array);
 
@@ -24,6 +24,7 @@ public class Task08 {
 
     public static int maxValue(int[] array) {
         int max = array[0];
+
         for (int i = 1; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
@@ -41,7 +42,7 @@ public class Task08 {
         }
     }
 
-    public static void printArra(int[] array) {
+    public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
