@@ -13,17 +13,14 @@ public class Task16 {
 
         n = getNumber();
 
-        size = getArraySize(n);
-        int[] array = new int[size];
-
-        initArray(array, n);
-        printArray(array);
+        printResult(n);
 
     }
 
-    public static void initArray(int[] array, int n) {
-
-
+    public static void printResult(int n) {
+        for (int i = n; i < 2 * n - 2; i++)
+            if (checkIfPrimeNumber(i) && checkIfPrimeNumber(i + 2))
+                System.out.println(i + ", " + (i + 2));
     }
 
     public static boolean checkIfPrimeNumber(int n) {
@@ -37,33 +34,6 @@ public class Task16 {
         }
 
         return flagPrime;
-    }
-
-    public static boolean checkIfTwins(int a, int b) {
-        boolean flagTwins = false;
-        if (b - a == 2) {
-            flagTwins = true;
-        }
-
-        return flagTwins;
-    }
-
-    public static int getArraySize(int n) {
-        int count = 0;
-        for (int i = n; i <= n * 2; i++) {
-            if (checkIfPrimeNumber(i)) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    public static void printArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
     }
 
     public static int getNumber() {
