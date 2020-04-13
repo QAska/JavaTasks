@@ -18,19 +18,23 @@ public class Task01 {
         message = "Enter number K > 0: ";
         k = getValue(message);
 
-        array = new int[size];
+        if (k == 0) {
+            System.out.println("Division by zero is not allowed!");
+        } else {
+            array = new int[size];
 
-        initArray(array);
-        printArray(array);
+            initArray(array);
+            printArray(array);
 
-        sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (isMultiple(array[i], k)) {
-                sum += array[i];
+            sum = 0;
+            for (int i = 0; i < array.length; i++) {
+                if (isMultiple(array[i], k)) {
+                    sum += array[i];
+                }
             }
-        }
 
-        System.out.println("Sum of the elements that are multiple of " + k + " is " + sum + ".");
+            System.out.println("Sum of the elements that are multiple of " + k + " is " + sum + ".");
+        }
 
     }
 
