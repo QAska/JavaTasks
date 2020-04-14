@@ -64,7 +64,7 @@ public class Task05 {
         Random rand = new Random();
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = rand.nextInt(100);
+            arr[i] = rand.nextInt(200) - 100;
         }
     }
 
