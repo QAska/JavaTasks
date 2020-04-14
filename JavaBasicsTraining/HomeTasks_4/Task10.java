@@ -16,7 +16,7 @@ public class Task10 {
         initArray(array);
         System.out.println("Initial array:");
         printArray(array);
-        System.out.println("Array with condition а[i] > i:");
+        System.out.println("Array with condition, а[i] > i:");
         printRestrictedArray(array);
     }
 
