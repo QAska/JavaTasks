@@ -7,9 +7,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Task03 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int[] array;
         int n;
+        boolean onlyZero;
 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter size of array: ");
@@ -24,17 +25,23 @@ public class Task03 {
 
         printArray(array);
 
-        for (int i = 0; i < array.length;) {
-            if (array[i] > 0) {
+        onlyZero = true;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                continue;
+            } else if (array[i] > 0) {
                 System.out.println("Positive number is first.");
-                break;
-            } else if (array[i] < 0) {
-                System.out.println("Negative number is first.");
+                onlyZero = false;
                 break;
             } else {
-                System.out.println("First is zero.");
+                System.out.println("Negative number is first.");
+                onlyZero = false;
                 break;
             }
+        }
+
+        if (onlyZero) {
+            System.out.println("Only zeroes are in the array.");
         }
     }
 
@@ -50,7 +57,7 @@ public class Task03 {
         Random rand = new Random();
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = rand.nextInt(20) - 10;
+            array[i] = rand.nextInt(200) - 100;
         }
     }
 }
