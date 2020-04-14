@@ -56,9 +56,10 @@ public class Task07 {
     }
 
     public static void initArray(double[] arr) {
-        Random rand = new Random();
+        Random rand;
         double minRange, maxRange;
 
+        rand = new Random();
         minRange = -100;
         maxRange = 100;
 

@@ -27,16 +27,23 @@ public class Task11 {
 
         System.out.println("Array with condition: ");
         printRestrictedArray(array, m, l);
-
-
     }
 
     public static void printRestrictedArray(int[] array, int m, int l) {
+        int count;
+
+        count = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % m == l) {
                 System.out.print(array[i] + " ");
+                count++;
             }
         }
+
+        if (count == 0) {
+            System.out.println("there is no numbers in array matching the condition.");
+        }
+
         System.out.println();
     }
 
