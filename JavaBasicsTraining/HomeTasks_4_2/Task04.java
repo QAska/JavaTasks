@@ -1,10 +1,10 @@
 /*
-Дана матрица. Вывести на экран первый и последний столбцы.
+Дана матрица. Вывести на экран первую и последнюю строки.
  */
 
 import java.util.Random;
 
-public class Task03 {
+public class Task04 {
     public static void main(String[] args) {
         int[][] array;
 
@@ -14,18 +14,18 @@ public class Task03 {
         System.out.println("Initial array:");
         printArray(array);
         System.out.println("--------------");
-        printFirstAndLastColumn(array);
+        printFirstAndLastRow(array);
     }
 
-    public static void printFirstAndLastColumn(int[][] array) {
+    public static void printFirstAndLastRow(int[][] array) {
         for (int i = 0; i < array.length; i++) {
+            if (i == 0 || i == array.length - 1) {
 
-            for (int j = 0; j < array[i].length; j++) {
-                if (j == 0 || j == array[i].length - 1) {
+                for (int j = 0; j < array[i].length; j++) {
                     System.out.print(array[i][j] + " ");
                 }
+                System.out.println();
             }
-            System.out.println();
         }
     }
 
