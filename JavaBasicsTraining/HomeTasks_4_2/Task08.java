@@ -14,9 +14,9 @@ public class Task08 {
         String message;
         int count;
 
-        message = "Enter number of rows, n >= 2:";
+        message = "Enter number of rows, n >= 2: ";
         n = getNumber(message);
-        message = "Enter number of columns, m >= 2:";
+        message = "Enter number of columns, m >= 2: ";
         m = getNumber(message);
         number = 7;
         array = new int[n][m];
@@ -73,7 +73,7 @@ public class Task08 {
 
         in = new Scanner(System.in);
         do {
-            System.out.println(message);
+            System.out.print(message);
             while (!in.hasNextInt()) {
                 in.next();
                 System.out.print("Only integers are allowed! Try again: ");
