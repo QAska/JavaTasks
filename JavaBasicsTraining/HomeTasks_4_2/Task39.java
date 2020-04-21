@@ -17,12 +17,12 @@ public class Task39 {
         message = "Enter size of the array, m <= 2: ";
         m = getNumber(message);
 
-        array1 = new int[][]{{4, 2}, {9, 0}};
-//        initArray(array1);
+        array1 = new int[m][m];
+        initArray(array1);
         printArray(array1);
         System.out.println("-------------------");
-        array2 = new int[][]{{3, 1}, {-3, 4}};
-//        initArray(array2);
+        array2 = new int[m][m];
+        initArray(array2);
         printArray(array2);
         System.out.println("-------------------");
         System.out.println("Multiplication of two arrays:");
