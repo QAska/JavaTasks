@@ -1,12 +1,12 @@
 /*
-Дан  целочисленный  массив  с  количеством  элементов  п.  Сжать  массив,  выбросив  из  него  каждый  второй
+Дан целочисленный массив с количеством элементов n. Сжать массив, выбросив из него каждый второй
 элемент (освободившиеся элементы заполнить нулями). Примечание. Дополнительный массив не использовать.
  */
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task19 {
+public class Task00 {
     public static void main(String[] args) {
         int n;
         int[] array;
@@ -58,10 +58,10 @@ public class Task19 {
 
         Scanner in = new Scanner(System.in);
         do {
-            System.out.println("Enter integer n >= 2: ");
+            System.out.print("Enter integer n >= 2: ");
             while (!in.hasNextInt()) {
                 in.next();
-                System.out.println("Only integers ae allowed! Try again: ");
+                System.out.print("Only integers ae allowed! Try again: ");
             }
             z = in.nextInt();
         } while (z < 2);
