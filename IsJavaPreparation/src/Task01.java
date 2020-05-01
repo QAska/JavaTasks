@@ -1,13 +1,13 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.util.Scanner;
-
 /*
 В main-методе создать переменные для каждого типа данных.
 Создать переменные примитивных классов и перевести эти переменные в классы обёртки(из int в Integer и наоборот).
 Создать массив строк, наполнить его, вывести в консоль его длину и все элементы.
  */
-public class Main {
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Task01 {
     public static void main(String[] args) {
         byte b = 127;
         short s = 32767;
@@ -45,31 +45,23 @@ public class Main {
         boolean bool2 = bool1;
 
         // work with array
-        int n;
-        String[] array;
         int size;
+        String[] array;
+
+        Random rand = new Random();
+        size = rand.nextInt(10) + 1;
+        array = new String[size];
+        System.out.println("Array size is " + array.length + ".");
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter array size, integer number: ");
-        while (!in.hasNextInt()) {
-            in.next();
-            System.out.print("Only integers are allowed! Try again: ");
-        }
-
-        n = in.nextInt();
-        in.nextLine();
-        array = new String[n];
 
         for (int k = 0; k < array.length; k++) {
 
-            System.out.print("Enter string: ");
+            System.out.print("Enter " + (k + 1) + " string: ");
             array[k] = in.nextLine();
         }
 
-        size = array.length;
-
-        System.out.println("Array size is " + size + ":");
-
+        System.out.println("Elements of the array:");
         for (int p = 0; p < array.length; p++) {
             System.out.println(array[p]);
         }
