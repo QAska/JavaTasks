@@ -5,41 +5,46 @@
 Добавить в класс static метод и вызвать его в main-методе используя имя класса.
  */
 
-public class Task02_1 {
-}
-
-class Phone {
+public class Phone {
 
     private String model;
     private int ram;
-    private float diagonal;
+    private double diagonal;
     private int pixel;
 
-    public Phone(String model, int ram, float diagonal, int pixel) {
+    public Phone(String model, int ram) {
+        this.model = model;
+        this.ram = ram;
+    }
+
+    public Phone(String model, int ram, double diagonal) {
         this.model = model;
         this.ram = ram;
         this.diagonal = diagonal;
-        this.pixel = pixel;
     }
 
-    public Phone(String model, int ram, float diagonal) {
-        this.model = model;
-        this.ram = ram;
-        this.diagonal = diagonal;
+    public void phoneDescription(String model, int ram) {
+        System.out.println("" +
+                "Phone model is " + model + ". " +
+                "Ram = " + ram + ". ");
     }
 
-    public Phone() {
+    public void phoneDescription(String model, int ram, double diagonal) {
+        System.out.println("" +
+                "Phone model is " + model + ". " +
+                "Ram = " + ram + ". " +
+                "Diagonal = " + diagonal + ".");
     }
 
-    public void phoneRinging() {
+    public void phoneRings() {
         System.out.println("Phone is ringing!");
     }
 
-    public void phoneCall() {
+    public void phoneCalls() {
         System.out.println("Phone is calling!");
     }
 
-    public void alarmRings() {
+    public static void alarmRings() {
         System.out.println("Alarm!");
     }
 
@@ -59,19 +64,11 @@ class Phone {
         this.ram = ram;
     }
 
-    public float getDiagonal() {
+    public double getDiagonal() {
         return diagonal;
     }
 
-    public void setModel(float diagonal) {
+    public void setDiagonal(double diagonal) {
         this.diagonal = diagonal;
-    }
-
-    public int getPixel() {
-        return pixel;
-    }
-
-    public void setModel(int pixel) {
-        this.pixel = pixel;
     }
 }
