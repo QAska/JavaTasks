@@ -7,8 +7,8 @@
 public class Task04 {
 
     public static void main(String[] args) {
-        Object a = new Object();
-        Object b = new Object();
+        Person a = new Person("Test1", 18);
+        Person b = new Person("Test1", 18);
 
         System.out.println("toString() of a: " + a.toString());
         System.out.println("hashCode() of a: " + a.hashCode());
@@ -19,11 +19,4 @@ public class Task04 {
         System.out.println("Is a == b: " + (a == b));
         System.out.println("Is a equals b: " + a.equals(b));
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
 }
-
-
