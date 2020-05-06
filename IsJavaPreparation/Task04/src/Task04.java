@@ -8,7 +8,7 @@ public class Task04 {
 
     public static void main(String[] args) {
         Person a = new Person("Test1", 18);
-        Person b = new Person("Test1", 18);
+        Person b = new Person("Test21", 18);
 
         System.out.println("toString() of a: " + a.toString());
         System.out.println("hashCode() of a: " + a.hashCode());

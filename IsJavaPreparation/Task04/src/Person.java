@@ -19,7 +19,7 @@ class Person {
         }
 
         Person guest = (Person) obj;
-        return age == guest.age && (Objects.equals(name, guest.name));
+        return age == guest.age && name.equals(guest.name);
     }
 }
 
