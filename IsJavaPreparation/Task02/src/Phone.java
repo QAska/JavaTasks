@@ -10,7 +10,6 @@ public class Phone {
     private String model;
     private int ram;
     private double diagonal;
-    private int pixel;
 
     public Phone(String model, int ram) {
         this.model = model;
