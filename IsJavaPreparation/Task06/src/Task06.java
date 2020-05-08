@@ -5,19 +5,25 @@
 
 public class Task06 {
     public static void main(String[] args) {
-        String name = "Ivan";
-        String currentDay = "MONDAY";
-        String season = "WINTER";
+        String name;
+        Day currentDay;
+        Season currentSeason;
 
-        studentSchedule schedule = new studentSchedule(Day.valueOf(currentDay), Season.valueOf(season));
+        name = "Ivan";
+        currentDay = Day.MONDAY;
+        currentSeason = Season.WINTER;
+
+        studentSchedule schedule = new studentSchedule(currentDay, currentSeason);
 
         schedule.goToUniversity(name);
 
-        schedule.setCurrentDay(Day.SATURDAY);
+        currentDay = Day.SATURDAY;
+        schedule.setCurrentDay(currentDay);
 
         schedule.goToUniversity(name);
 
-        schedule.setSeason(Season.SUMMER);
+        currentSeason = Season.SUMMER;
+        schedule.setSeason(currentSeason);
 
         schedule.goToUniversity(name);
     }
