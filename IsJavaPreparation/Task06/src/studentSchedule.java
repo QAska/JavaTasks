@@ -15,13 +15,17 @@ public class studentSchedule {
         this.currentDay = currentDay;
     }
 
+    public Season getCurrentSeason() {
+        return currentSeason;
+    }
+
     public void setSeason(Season currentSeason) {
         this.currentSeason = currentSeason;
     }
 
     public void goToUniversity(String name) {
         if (this.currentSeason == Season.SUMMER) {
-            System.out.println(name + "! Summer - the time to relax!");
+            System.out.println(name + "! " + getCurrentSeason() + " is the time to relax!");
         } else if (this.getCurrentDay() == Day.SATURDAY || this.getCurrentDay() == Day.SUNDAY) {
             System.out.println(name + ", it's " + this.currentDay.title + ", the day of relax!");
         } else {
