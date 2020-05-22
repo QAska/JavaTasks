@@ -1,6 +1,7 @@
 public class MyClassImplementsInterface implements MyInterfaceException {
-    @Override
-    public void display(int n) throws MyClassException{
+    public void displayException() throws MyClassException {
+        int n = -1;
+
         if (n < 0) {
             throw new MyClassException("n < 0 exception!");
         } else {

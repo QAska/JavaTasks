@@ -8,18 +8,18 @@
 
 public class Task07 {
     public static void main(String[] args){
-        int n = -1;
         MyClassImplementsInterface myClass = new MyClassImplementsInterface();
         try {
-            myClass.display(n);
+            myClass.displayException();
         } catch (MyClassException e) {
             e.printStackTrace();
         }
 
         try {
-            throw new RuntimeException();
-        } catch (RuntimeException e) {
             MyClassRuntimeException.throwException();
+            throw new MyClassException("MyClassException message!");
+        } catch (MyClassException e) {
+            e.printStackTrace();
             System.out.println("RuntimeException error in main method!");
         }
     }
