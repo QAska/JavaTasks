@@ -10,9 +10,7 @@
 где ключ - имя, значение - порядковый номер в цепи.
  */
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class Task08 {
     public static void main(String[] args) {
@@ -65,15 +63,61 @@ public class Task08 {
         for (int i = 0; i < repkaQueue.size(); i++) {
             System.out.print(repkaQueue.get(i).getName() + " ");
         }
+        System.out.println();
+        System.out.println();
 
         Comparator memberComparator = new RepkaMemebersComparator();
         Collections.sort(repkaQueue, memberComparator);
 
-        System.out.println();
-        System.out.println();
         System.out.println("Отсортировано по номерам с помощью Comparator:");
         for (int i = 0; i < repkaQueue.size(); i++) {
             System.out.print(repkaQueue.get(i).getName() + " ");
         }
+        System.out.println();
+        System.out.println();
+
+        repkaQueue.remove(0);
+        System.out.println("Удалили Бэтмена:");
+        for (int i = 0; i < repkaQueue.size(); i++) {
+            System.out.print(repkaQueue.get(i).getName() + " ");
+        }
+        System.out.println();
+        System.out.println();
+
+        HashSet<RepkaPuller> repkaSet = new HashSet<>(repkaQueue);
+        repkaSet.add(batman);
+        System.out.println("Печатаем Set с Бэтменом:");
+        for (RepkaPuller setElement : repkaSet) {
+            System.out.print(setElement.getName() + " ");
+        }
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Удаляем из Set всех, у кого `порядковый номер в цепи` больше 3.");
+        for (Iterator<RepkaPuller> iterator = repkaSet.iterator(); iterator.hasNext(); ) {
+            RepkaPuller s = iterator.next();
+            if (s.getOrder() > 3) {
+                iterator.remove();
+            }
+        }
+
+        for (RepkaPuller setElement : repkaSet) {
+            System.out.print(setElement.getName() + " ");
+        }
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Создаём HashMap<String, Integer> из ArrayList-а, где ключ - имя, значение - номер.");
+        HashMap<String, Integer> repkaMap = new HashMap<>();
+        for (RepkaPuller mapElement : repkaQueue) {
+            repkaMap.put(mapElement.getName(), mapElement.getOrder());
+        }
+
+        for (String name: repkaMap.keySet()){
+            String key = name.toString();
+            String value = repkaMap.get(name).toString();
+            System.out.print(key + " - " + value + "; ");
+        }
+
     }
 }
